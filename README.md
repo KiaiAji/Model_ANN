@@ -33,11 +33,11 @@ Proyek ini adalah implementasi **Artificial Neural Network (ANN)** untuk klasifi
    - Split data menjadi training dan testing (misalnya 80% train / 20% test)
 
 3. **Model ANN**  
-   - Arsitektur:  
-     - Input sesuai jumlah fitur (4)  
-     - Beberapa hidden layer (jumlah neuron, layer bisa berbeda, misalnya satu atau dua hidden layer)  
-     - Aktivasi hidden layer: ReLU  
-     - Output layer dengan Softmax (untuk kelas 3)  
+   Arsitektur:  
+   - Input sesuai jumlah fitur (4)  
+   - Beberapa hidden layer (jumlah neuron, layer bisa berbeda, misalnya satu atau dua hidden layer)  
+   - Aktivasi hidden layer: ReLU  
+   - Output layer dengan Softmax (untuk kelas 3)  
    - Kompilasi model: loss function `categorical_crossentropy`, optimizer `Adam`, metrik `accuracy`
 
 4. **Training**  
