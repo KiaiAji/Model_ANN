@@ -13,18 +13,17 @@ Proyek ini adalah implementasi **Artificial Neural Network (ANN)** untuk klasifi
 
 ## 🔍 Metodologi
 
-1. **Data**  
+1. **Data**
    - Dataset: Iris (150 contoh, 3 kelas: *setosa*, *versicolor*, *virginica*)  
    - Fitur: `sepal length`, `sepal width`, `petal length`, `petal width`
 
-2. **Preprocessing**  
+2. **Preprocessing**
    - Normalisasi fitur dengan `StandardScaler`  
    - (Opsional: reduksi dimensi dengan PCA, tergantung versi)  
    - One-hot encoding untuk label  
    - Split data menjadi training dan testing (misalnya 80% train / 20% test)
 
-3. **Model ANN**  
-   Arsitektur:
+3. **Model ANN**
    - Input sesuai jumlah fitur (4)  
    - Beberapa hidden layer (jumlah neuron, layer bisa berbeda, misalnya satu atau dua hidden layer)  
    - Aktivasi hidden layer: ReLU  
@@ -35,7 +34,7 @@ Proyek ini adalah implementasi **Artificial Neural Network (ANN)** untuk klasifi
    - Epoch dan batch size sesuai yang diatur di notebook (misalnya 50 epoch, batch size 5 atau 10)  
    - Monitoring training vs validation (accuracy dan loss)
 
-6. **Evaluasi**  
+6. **Evaluasi**
    - Menghitung akurasi di set test  
    - Confusion Matrix  
    - Precision, Recall, F1-Score per kelas  
