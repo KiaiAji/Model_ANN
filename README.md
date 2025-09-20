@@ -8,19 +8,20 @@ Notebook utama: **Metode_ANN.ipynb**.
 
 ## 📋 Isi Repositori
 
-| File / Komponen            | Deskripsi                                                                 |
-|----------------------------|---------------------------------------------------------------------------|
-| `Metode_ANN.ipynb`         | Notebook yang berisi kode implementasi, training, evaluasi model ANN     |
-| Dataset (jika ada)         | Data iris dalam bentuk CSV atau yang dipakai di notebook                 |
-| `model_saved` / model file  | Model ANN setelah training (jika sudah disimpan)                         |
-| README.md                  | Deskripsi proyek, cara menjalankan, hasil, dan panduan penggunaan model  |
+| File / Komponen             | Deskripsi                                                                 |
+|-----------------------------|---------------------------------------------------------------------------|
+| `Metode_ANN.ipynb`          | Notebook berisi kode implementasi, training, dan evaluasi model ANN       |
+| `images/accuracy.png`       | Grafik akurasi training vs validasi                                       |
+| `images/loss.png`           | Grafik loss training vs validasi                                          |
+| `images/confusion_matrix.png` | Visualisasi confusion matrix                                             |
+| README.md                   | Dokumentasi proyek ini                                                    |
 
 ---
 
 ## 🔍 Metodologi
 
 1. **Data**
-   - Dataset Iris dengan 150 sampel, 3 kelas (*setosa*, *versicolor*, *virginica*)
+   - Dataset Iris (150 sampel, 3 kelas: *setosa*, *versicolor*, *virginica*)
    - Fitur:
      - Sepal length
      - Sepal width
@@ -29,27 +30,40 @@ Notebook utama: **Metode_ANN.ipynb**.
 
 2. **Preprocessing**
    - Normalisasi fitur dengan `StandardScaler`
-   - (Opsional jika ada) Reduksi dimensi dengan PCA
-   - Konversi label menjadi bentuk numerik / one-hot encoding
-   - Split data menjadi data latih dan data uji
+   - Konversi label menjadi one-hot encoding
+   - Split data menjadi train & test (misalnya 80:20)
 
 3. **Model ANN**
-   - Arsitektur jaringan (hidden layer / jumlah neuron bisa berbeda tergantung eksperimen)
-   - Aktivasi: ReLU di hidden layer, Softmax di output layer
+   - Input layer: 4 neuron (untuk 4 fitur)
+   - Hidden layer: Dense dengan ReLU activation
+   - Output layer: 3 neuron dengan Softmax
    - Optimizer: Adam
-   - Loss function: Categorical Crossentropy
+   - Loss: Categorical Crossentropy
 
 4. **Evaluasi**
-   - Akurasi model pada data uji
-   - Precision, Recall, F1-score per kelas
-   - Confusion matrix
-   - Visualisasi: grafik akurasi training vs validasi, grafik loss training vs validasi
+   - Akurasi
+   - Precision, Recall, F1-score
+   - Confusion Matrix
+   - Grafik akurasi & loss training vs validasi
+
+---
+
+## 📊 Hasil & Visualisasi
+
+### Confusion Matrix
+![Confusion Matrix](images/confusion_matrix.png)
+
+### Grafik Akurasi Training vs Validasi
+![Accuracy](images/accuracy.png)
+
+### Grafik Loss Training vs Validasi
+![Loss](images/loss.png)
 
 ---
 
 ## 🚀 Cara Menjalankan
 
-1. **Clone repository**  
+1. **Clone repository**
    ```bash
    git clone https://github.com/KiaiAji/Model_ANN.git
    cd Model_ANN
