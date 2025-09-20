@@ -20,7 +20,7 @@ Proyek ini adalah implementasi **Artificial Neural Network (ANN)** untuk klasifi
 
 ---
 
-# 🔍 Metodologi
+## 🔍 Metodologi
 
 1. **Data**  
    - Dataset: Iris (150 contoh, 3 kelas: *setosa*, *versicolor*, *virginica*)  
@@ -33,18 +33,18 @@ Proyek ini adalah implementasi **Artificial Neural Network (ANN)** untuk klasifi
    - Split data menjadi training dan testing (misalnya 80% train / 20% test)
 
 3. **Model ANN**  
-   Arsitektur:  
+   Arsitektur:
    - Input sesuai jumlah fitur (4)  
    - Beberapa hidden layer (jumlah neuron, layer bisa berbeda, misalnya satu atau dua hidden layer)  
    - Aktivasi hidden layer: ReLU  
    - Output layer dengan Softmax (untuk kelas 3)  
    - Kompilasi model: loss function `categorical_crossentropy`, optimizer `Adam`, metrik `accuracy`
 
-4. **Training**  
+5. **Training**
    - Epoch dan batch size sesuai yang diatur di notebook (misalnya 50 epoch, batch size 5 atau 10)  
    - Monitoring training vs validation (accuracy dan loss)
 
-5. **Evaluasi**  
+6. **Evaluasi**  
    - Menghitung akurasi di set test  
    - Confusion Matrix  
    - Precision, Recall, F1-Score per kelas  
