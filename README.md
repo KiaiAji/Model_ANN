@@ -9,15 +9,6 @@ Proyek ini adalah implementasi **Artificial Neural Network (ANN)** untuk klasifi
 - Rayhan Muhammad Adha  (G1A023051) 
 - Ghazi Al-Ghifari      (G1A023053)
 
-## 📂 Struktur Proyek
-
-| Komponen | Isi |
-|---|---|
-| Notebook Colab | Berisi kode lengkap mulai dari data loading, preprocessing, training, evaluasi, visualisasi |
-| Model (jika disimpan) | File model terlatih (misal `.h5`) jika kamu menyimpannya |
-| Gambar / Grafik | Confusion Matrix, grafik akurasi, grafik loss |
-| README.md | Dokumen ini, sebagai dokumentasi repo |
-
 ---
 
 ## 🔍 Metodologi
