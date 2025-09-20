@@ -1,8 +1,8 @@
-# Klasifikasi Iris - Model ANN
+# 🌸 Klasifikasi Iris - Model ANN
 Proyek ini berisi implementasi **Artificial Neural Network (ANN)** menggunakan dataset **Iris**.  
 Model dibuat dengan **TensorFlow/Keras** untuk mengklasifikasikan spesies bunga Iris berdasarkan fitur morfologisnya.
 
-# Anggota Kelompok
+# 👥 Anggota Kelompok
 - Aulia Dwi Ramahdani  (G1A023043)
 - Habib Al Qodri       (G1A023047) 
 - Yohanes Adi Prasetya (G1A023049) 
