@@ -51,13 +51,16 @@ Notebook utama: **Metode_ANN.ipynb**.
 ## 📊 Hasil & Visualisasi
 
 ### Confusion Matrix
-![Confusion Matrix](images/confusion_matrix.png)
+![Confusion Matrix](<img width="505" height="470" alt="image" src="https://github.com/user-attachments/assets/191a4346-19d5-4c01-9389-7944a3acd507" />
+)
 
 ### Grafik Akurasi Training vs Validasi
-![Accuracy](images/accuracy.png)
+![Accuracy](<img width="536" height="393" alt="image" src="https://github.com/user-attachments/assets/ce2d7696-4742-40ff-ac4d-867fc290853d" />
+)
 
 ### Grafik Loss Training vs Validasi
-![Loss](images/loss.png)
+![Loss](<img width="536" height="393" alt="image" src="https://github.com/user-attachments/assets/76111d79-771d-46cb-8bce-441e1209b3b0" />
+)
 
 ---
 
