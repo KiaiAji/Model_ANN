@@ -1,63 +1,55 @@
-# 🌸 Klasifikasi Bunga Iris dengan ANN + PCA
+# Model ANN untuk Klasifikasi Iris
 
-Proyek ini merupakan implementasi **Artificial Neural Network (ANN)** untuk melakukan klasifikasi jenis bunga **Iris** berdasarkan 4 fitur:  
-- Sepal length  
-- Sepal width  
-- Petal length  
-- Petal width  
+Repositori ini berisi proyek klasifikasi bunga *Iris* menggunakan **Artificial Neural Network (ANN)**. Dataset digunakan untuk membedakan tiga jenis iris: *Iris-setosa*, *Iris-versicolor*, dan *Iris-virginica*, berdasarkan empat fitur (sepal length, sepal width, petal length, petal width).
 
-Untuk mengurangi dimensi fitur dan meningkatkan efisiensi model, digunakan metode **Principal Component Analysis (PCA)** sebelum data masuk ke ANN.  
+Notebook utama: **Metode_ANN.ipynb**.
 
 ---
 
-## 📂 Struktur Proyek
-- `iris_ann_pca.ipynb` → notebook utama berisi kode training, evaluasi, dan visualisasi  
-- `iris.csv` → dataset Iris (opsional, jika tidak menggunakan bawaan sklearn)  
-- `iris_ann_pca.h5` → model terlatih yang disimpan  
-- `README.md` → dokumentasi proyek  
+## 📋 Isi Repositori
+
+| File / Komponen            | Deskripsi                                                                 |
+|----------------------------|---------------------------------------------------------------------------|
+| `Metode_ANN.ipynb`         | Notebook yang berisi kode implementasi, training, evaluasi model ANN     |
+| Dataset (jika ada)         | Data iris dalam bentuk CSV atau yang dipakai di notebook                 |
+| `model_saved` / model file  | Model ANN setelah training (jika sudah disimpan)                         |
+| README.md                  | Deskripsi proyek, cara menjalankan, hasil, dan panduan penggunaan model  |
 
 ---
 
-## ⚙️ Metodologi
-1. **Data**  
-   - Dataset Iris (150 sampel, 3 kelas: *Setosa*, *Versicolor*, *Virginica*).  
-   - 4 fitur numerik.  
+## 🔍 Metodologi
 
-2. **Preprocessing**  
-   - Normalisasi fitur dengan **StandardScaler**  
-   - Reduksi dimensi dengan **PCA (2 komponen utama)**  
-   - Label encoding & one-hot encoding  
+1. **Data**
+   - Dataset Iris dengan 150 sampel, 3 kelas (*setosa*, *versicolor*, *virginica*)
+   - Fitur:
+     - Sepal length
+     - Sepal width
+     - Petal length
+     - Petal width
 
-3. **Implementasi Model (ANN)**  
-   - Arsitektur jaringan:  
-     - Input layer: 2 neuron (hasil PCA)  
-     - Hidden layer 1: 8 neuron, aktivasi ReLU  
-     - Hidden layer 2: 8 neuron, aktivasi ReLU  
-     - Output layer: 3 neuron, aktivasi Softmax  
-   - Optimizer: Adam  
-   - Loss: Categorical Crossentropy  
+2. **Preprocessing**
+   - Normalisasi fitur dengan `StandardScaler`
+   - (Opsional jika ada) Reduksi dimensi dengan PCA
+   - Konversi label menjadi bentuk numerik / one-hot encoding
+   - Split data menjadi data latih dan data uji
 
-4. **Evaluasi**  
-   - Akurasi pada data uji  
-   - Confusion Matrix  
-   - Precision, Recall, F1-score  
-   - Grafik Akurasi & Loss (training vs validation)  
+3. **Model ANN**
+   - Arsitektur jaringan (hidden layer / jumlah neuron bisa berbeda tergantung eksperimen)
+   - Aktivasi: ReLU di hidden layer, Softmax di output layer
+   - Optimizer: Adam
+   - Loss function: Categorical Crossentropy
 
----
-
-## 📊 Hasil
-- **Akurasi**: ± 93–96% pada data uji  
-- **Confusion Matrix** menunjukkan bahwa *Iris-setosa* diklasifikasikan sempurna, kesalahan kecil hanya terjadi antara *Versicolor* dan *Virginica*.  
-- **Precision, Recall, F1-score** rata-rata > 0.90  
-- **Grafik Training/Validation** menunjukkan tidak ada overfitting signifikan.  
+4. **Evaluasi**
+   - Akurasi model pada data uji
+   - Precision, Recall, F1-score per kelas
+   - Confusion matrix
+   - Visualisasi: grafik akurasi training vs validasi, grafik loss training vs validasi
 
 ---
 
-## 🚀 Implementasi Prediksi
-Contoh penggunaan model untuk klasifikasi bunga baru:
+## 🚀 Cara Menjalankan
 
-```python
-sample = [5.1, 3.5, 1.4, 0.2]  # sepal length, sepal width, petal length, petal width
-label, prob = predict_iris(sample, scaler, pca, model, ["Iris-setosa","Iris-versicolor","Iris-virginica"])
-print("Prediksi:", label)
-print("Probabilitas:", prob)
+1. **Clone repository**  
+   ```bash
+   git clone https://github.com/KiaiAji/Model_ANN.git
+   cd Model_ANN
