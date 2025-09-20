@@ -45,8 +45,6 @@ Proyek ini adalah implementasi **Artificial Neural Network (ANN)** untuk klasifi
 
 ## 📈 Visualisasi & Hasil
 
-> Berikut grafik-grafik hasil dari training dan evaluasi model. Pastikan kamu membuat file grafik/gambar ini di folder `images/` agar bisa ditampilkan di README.
-
 ### Grafik Akurasi (Training vs Validasi)
 
 <img width="505" height="470" alt="image" src="https://github.com/user-attachments/assets/9294de43-c6dd-4a7f-ad3a-336cebae130d" />
