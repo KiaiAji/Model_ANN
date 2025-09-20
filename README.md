@@ -9,7 +9,7 @@ Proyek ini adalah implementasi **Artificial Neural Network (ANN)** untuk klasifi
 - Rayhan Muhammad Adha  (G1A023051) 
 - Ghazi Al-Ghifari      (G1A023053)
 
-# 📂 Struktur Proyek
+## 📂 Struktur Proyek
 
 | Komponen | Isi |
 |---|---|
@@ -52,25 +52,25 @@ Proyek ini adalah implementasi **Artificial Neural Network (ANN)** untuk klasifi
 
 ---
 
-# 📈 Visualisasi & Hasil
+## 📈 Visualisasi & Hasil
 
 > Berikut grafik-grafik hasil dari training dan evaluasi model. Pastikan kamu membuat file grafik/gambar ini di folder `images/` agar bisa ditampilkan di README.
 
-# Grafik Akurasi (Training vs Validasi)
+### Grafik Akurasi (Training vs Validasi)
 
 <img width="505" height="470" alt="image" src="https://github.com/user-attachments/assets/9294de43-c6dd-4a7f-ad3a-336cebae130d" />
 
-# Grafik Loss (Training vs Validasi)
+### Grafik Loss (Training vs Validasi)
 
 <img width="536" height="393" alt="image" src="https://github.com/user-attachments/assets/086392c4-40f3-4c12-a260-eba70e756265" />
 
-# Confusion Matrix
+### Confusion Matrix
 
 <img width="536" height="393" alt="image" src="https://github.com/user-attachments/assets/c0b39e7c-071d-4c07-8978-e5a7ec83b1e5" />
 
 ---
 
-# 🖥️ Kode Utama Prediksi & Implementasi
+## 🖥️ Kode Utama Prediksi & Implementasi
 
 Berikut contoh cuplikan kode untuk memuat model terlatih dan melakukan prediksi terhadap data baru (fitur input):
 
