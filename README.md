@@ -2,6 +2,13 @@
 
 Proyek ini adalah implementasi **Artificial Neural Network (ANN)** untuk klasifikasi jenis bunga *Iris* menggunakan dataset Iris. Model dilatih dan dievaluasi di Google Colab.  
 
+# Anggota Kelompok
+- Aulia Dwi Rahmadani   (G1A023043)
+- Habib Al Qodri        (G1A023047)
+- Yohanes Adi Prasetya  (G1A023049) 
+- Rayhan Muhammad Adha  (G1A023051) 
+- Ghazi Al-Ghifari      (G1A023053)
+
 ## 📂 Struktur Proyek
 
 | Komponen | Isi |
